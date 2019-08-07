@@ -37,7 +37,6 @@ public class Main {
 		
 	}
 	
-
 	public static ArrayList<Customer> sortCustomers(ArrayList<Customer> custlist) {		
 			
 			 int i, j, min_idx;  

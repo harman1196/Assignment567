@@ -13,7 +13,6 @@ public class Customer implements IDisplay {
 	private ArrayList<Bill> billList;
 
 	public Customer(int CustomerId, String firstName, String lastName, String fullName, String emailId) {
-
 		this.CustomerId = CustomerId;
 		this.firstName = firstName;
 		this.lastName = lastName;
