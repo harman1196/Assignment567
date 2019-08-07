@@ -105,7 +105,7 @@ public class Customer implements IDisplay {
 			// Find the minimum element in unsorted array
 			min_idx = i;
 			for (j = i + 1; j < this.billList.size(); j++)
-				if (this.billList.get(j).getBillId() < this.billList.get(min_idx).getBillId()) {
+				if (this.billList.get(j).getBillAmount() < this.billList.get(min_idx).getBillAmount()) {
 					min_idx = j;
 				}
 			// Swap the found minimum element with the first element

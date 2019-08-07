@@ -9,26 +9,30 @@ public class Main {
 		// TODO Auto-generated method stub
 
 		ArrayList<Customer> custlist=new ArrayList<Customer>();
-		Customer objcustomer1 =new Customer(10,"Harman","Singh","Harman Singh","harman@gmail.com");
-		objcustomer1.insertion(new Mobile(3,"31/07/19","Mobile", 116, "Iphone XS", "Prepaid", "6476670240", 7, 250));
-		objcustomer1.insertion(new Mobile(2,"31/07/19","Mobile", 116, "Iphone XS", "Prepaid", "6476670240", 7, 250));
-		objcustomer1.insertion(new Mobile(1,"31/07/19","Mobile", 116, "Iphone XS", "Prepaid", "6476670240", 7, 250));
+		Customer objcustomer1 =new Customer(1,"Harman","Singh","Harman Singh","harman@gmail.com");
+		objcustomer1.insertion(new Mobile(3,"31/07/19","Mobile", 117, "Iphone XS", "Prepaid", "6476670240", 7, 250));
+		objcustomer1.insertion(new Internet(1, "31/07/19", "Internet", 150, "Rogers", 25));
+		objcustomer1.insertion(new Hydro(12, "30/07/19", "Hydro", 109, "TorontoHydro", 115));
 		
-		Customer objcustomer2 =new Customer(2,"Harman","Singh","Harman Singh","harman@gmail.com");
+		Customer objcustomer2 =new Customer(3,"Harman","Singh","Harman Singh","harman@gmail.com");
 		
-		
-		
-		
+		Customer objcustomer3=new Customer(2,"Monnu","Patialavi","Monnu Patialavi","monnu.patiala@gmail.com");
+		objcustomer3.insertion(new Internet(143,"07/08/19","Internet",156,"Bell",24));
+		objcustomer3.insertion(new Hydro(132,"01/08/19","Hydro",170,"Raptors",121));
 		
 		custlist.add(objcustomer1);
 		custlist.add(objcustomer2);
+		custlist.add(objcustomer3);
 		
 		sortCustomers(custlist);
 		
 		
 		
 		for(int i=0; i < custlist.size() ; i++) {
+			
+			
 			custlist.get(i).display();
+			
 		}
 		
 	}
@@ -58,5 +62,6 @@ public class Main {
 		
 		
 	}
+	
 
 }
