@@ -4,11 +4,12 @@ package src;
 import java.util.ArrayList;
 
 public class Main {
+	static ArrayList<Customer> custlist=new ArrayList<Customer>();
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		ArrayList<Customer> custlist=new ArrayList<Customer>();
+		
 		Customer objcustomer1 =new Customer(1,"Harman","Singh","Harman Singh","harman@gmail.com");
 		objcustomer1.insertion(new Mobile(3,"31/07/19","Mobile", 117, "Iphone XS", "Prepaid", "6476670240", 7, 250));
 		objcustomer1.insertion(new Internet(1, "31/07/19", "Internet", 150, "Rogers", 25));
@@ -25,15 +26,14 @@ public class Main {
 		custlist.add(objcustomer3);
 		
 		sortCustomers(custlist);
-		
-		
-		
 		for(int i=0; i < custlist.size() ; i++) {
 			
 			
 			custlist.get(i).display();
 			
 		}
+		
+		getCustomerByID(2);
 		
 	}
 	
@@ -60,6 +60,27 @@ public class Main {
 			    return custlist;
 		
 		
+	}
+	
+	public static void getCustomerByID(int ID)
+	{
+		boolean flag=false;
+		for (int i=0;i<custlist.size();i++)
+		{
+			if(ID==custlist.get(i).getCustomerId())
+			{
+				System.out.println("Found a customer of ID " + ID);
+				flag=true;
+				
+				if(flag==true) {
+					custlist.get(i).display();
+				} else {
+					System.out.println("Customer doesn't Exist with such ID!");
+				}
+			}
+		}
+		
+	
 	}
 	
 

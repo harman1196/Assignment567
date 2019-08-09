@@ -166,6 +166,7 @@ public class Customer implements IDisplay {
 			System.out.println("******************************************");
 		} else {
 			System.out.println("~~~NOTE : This Customer has no bills");
+			System.out.println("******************************************\n");
 		}
 
 	}
