@@ -54,7 +54,6 @@ public class Main {
 			        Customer custtemp = custlist.get(i);
 			        custlist.set(i, custlist.get(min_idx));
 			        custlist.set(min_idx, custtemp);
-			      
 				
 			}
 			    return custlist;

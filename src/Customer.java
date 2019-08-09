@@ -126,7 +126,6 @@ public class Customer implements IDisplay {
 		if (billList.size() > 0) {
 
 			System.out.println("\n---- Bill Information ----" + "\n******************************************");
-
 			this.sortBills();
 
 			for (int i = 0; i < billList.size(); i++) {
